@@ -1,17 +1,12 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import App from './App.vue';
 
-Vue.filter('to-lowercase', function(value) {
-    return value.toLowerCase();
-});
-
-Vue.mixin({
-    created() {
-        console.log('Global Mixin - Created Hook');
-    }
+Vue.filter('count-words', function (val) {
+  const wordsCount = val.split(' ').length;
+  return `${val} (${wordsCount})`;
 });
 
 new Vue({
   el: '#app',
   render: h => h(App)
-})
+});
