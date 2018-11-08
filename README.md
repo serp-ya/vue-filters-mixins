@@ -1,3 +1,5 @@
+Github Paged demo: https://serp-ya.github.io/vue-filters-mixins/
+
 # vue-cli
 
 > A Vue.js project
